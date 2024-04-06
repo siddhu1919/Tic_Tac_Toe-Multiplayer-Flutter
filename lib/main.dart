@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tictactoe_multiplayer/screens/create_room.dart';
+import 'package:tictactoe_multiplayer/screens/join_room.dart';
 import 'package:tictactoe_multiplayer/screens/main_menu_screen.dart';
 import 'package:tictactoe_multiplayer/utils/colors.dart';
 
@@ -18,7 +20,13 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: bgcolor,
       ),
       title: 'TictacToe',
-      home: const MainMenuScreen(),
+      routes: {
+        MainMenuScreen.routeName: (context) => const MainMenuScreen(),
+        JoinRoom.routeName: (context) => const JoinRoom(),
+        CreateRoom.routeName: (context) => const CreateRoom(),
+      },
+      // home: const MainMenuScreen(),
+      initialRoute: MainMenuScreen.routeName,
     );
   }
 }
