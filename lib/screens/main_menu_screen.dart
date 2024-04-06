@@ -25,6 +25,7 @@ class MainMenuScreen extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Responsive(
             child: CustomButton(
