@@ -45,11 +45,11 @@ class _CreateRoomState extends State<CreateRoom> {
                 height: Size.height * 0.08,
               ),
               CustomTextField(
-                  controller: _nameController, hintText: "Enter room name"),
+                  controller: _nameController, hintText: "Enter your name"),
               SizedBox(
                 height: Size.height * 0.03,
               ),
-              CustomButton(onTap: () {}, text: "Create")
+              CustomButton(onTap: () {}, text: "Create"),
             ],
           ),
         ),
